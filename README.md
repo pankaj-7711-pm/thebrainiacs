@@ -35,3 +35,7 @@
 - going to give the daily routine best suitable for the user based on the health condition
 
 - going to give the information about the therapies that are available
+
+# Video drive Link
+
+- https://drive.google.com/drive/folders/1uqGsBg1yOwfH0UMgRoB9ICaelM_InVKA?usp=sharing
