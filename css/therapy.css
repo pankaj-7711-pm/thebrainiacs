@@ -1,0 +1,21 @@
+.my-5{
+    padding-top: 8rem;
+    padding-bottom: 0;
+}
+.card-text{
+    height: 200px !important;
+}
+.footer{
+    color: white;
+    padding-top: 4.5rem;
+    background-color: black;
+    height: 15rem;
+    text-align: center;
+    align-items: center;
+}
+
+a :hover{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}

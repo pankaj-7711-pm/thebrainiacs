@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    font-size: 1.6rem !important;
+    background-color: #2a2a2a !important;
+}
+
+
+.form {
+    position: relative;
+    max-width: 40rem;
+    padding: 10rem 0;
+    color: grey;
+    background-color: grey;
+    border-radius: 1rem;
+    box-shadow: 0 1px 1rem rgba(0, 0, 0, .1);
+    isolation: isolate;
+}
+
+
+.form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    background: linear-gradient(to left, #fc6767,
+            #35dc5f);
+    border-radius: 1rem 1rem 100% 100%;
+    z-index: -1;
+}
+
+
+.form__title {
+    position: absolute;
+    top: 3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+}
+
+
+.form>form {
+    padding: 2.5rem;
+    background-color: inherit;
+}
+
+
+.form__input {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    margin: 0 auto;
+}
+
+
+.form__input>i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #87fc67;
+}
+
+
+.form__input input {
+    position: relative;
+    width: 100%;
+    font: inherit;
+    padding: 1rem 0;
+    margin-top: .5rem;
+    border: none;
+    outline: none;
+}
+
+
+.form__input .bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .1);
+    width: 100%;
+    height: 1px;
+}
+
+
+.form__input .bar::before {
+    content: "";
+    position: absolute;
+    background-color: #fc6767;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+
+.form__input>input:focus+.bar::before {
+    transform: scaleX(1);
+}
+
+
+.form__button {
+    display: block;
+    margin: 2.5rem auto 3rem;
+    padding: 1rem 5rem;
+    background: linear-gradient(to left, #fc6767,
+            #ec008c);
+    color: grey;
+    font: inherit;
+    border: .5rem solid grey;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3rem;
+}
+
+
+.form__button:hover {
+    background: linear-gradient(to right, #fc6767,
+            #ec008c);
+}
+
+
+.form__switch {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #a1a1a1;
+}
+
+
+.form__switch a {
+    text-decoration: none;
+    color: #fc6767;
+}
+
+
+.form__switch a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 43.75em) {
+    .form::before {
+        height: 30rem;
+    }
+
+
+    .form__title {
+        left: 10rem;
+        transform: none;
+    }
+
+
+    .form>form {
+        transform: translateX(10rem);
+        border-radius: inherit;
+        box-shadow: inherit;
+    }
+}
+
+.aaaaa{
+    font-size: 15px;
+    margin: auto;
+}
+.navbar-brand{
+    font-size: large !important;
+}
+
+.cccc{
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+    
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+}
+
+.loader {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #2a2a2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    position: absolute;
+    width:  400px;
+    height: 400px;
+    border: 2px solid #191919;
+    border-radius: 50%;
+    animation: animate 6s linear infinite;
+}
+
+.circle2 {
+    width: 300px;
+    height: 300px;
+    animation: animate 6s linear infinite;
+}
+
+.circle3 {
+    width: 200px;
+    height: 200px;
+    animation: animate 6s linear infinite;
+}
+
+.circle4 {
+    width: 100px;
+    height: 100px;
+    animation: animate 6s linear infinite;
+}
+
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: var(--clr);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--clr),
+        0 0 60px var(--clr);
+}
+.mar{
+    padding-top: 3rem;
+}
